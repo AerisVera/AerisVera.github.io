@@ -1,0 +1,89 @@
+/* Header Styles */
+header {
+    background-color: #333; /* Adjust header background color as needed */
+    color: #fff; /* Adjust header text color as needed */
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust logo size as needed */
+    margin-right: 10px; /* Adjust spacing between logo and title as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between menu items as needed */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff; /* Adjust menu item text color as needed */
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+.art-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artwork-square {
+    width: calc(33.33% - 20px); /* Adjust square width and spacing as needed */
+    margin-bottom: 20px; /* Adjust spacing between squares as needed */
+}
+
+.artwork-square img {
+    width: 100%;
+    height: auto;
+}
+
+.artwork-square p {
+    margin: 10px 0 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Adjust footer background color as needed */
+    color: #fff; /* Adjust footer text color as needed */
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content h3 {
+    margin: 0;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust icon size as needed */
+    margin-left: 10px; /* Adjust spacing between icons as needed */
+}
