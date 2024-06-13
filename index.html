@@ -3,70 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WildWetlands Art Gallery</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+    <title>Art Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif; /* Mont font */
+            background-color: #ffffff; /* All-white background */
+            padding: 20px; /* Add padding for better readability */
+        }
+
+        .top-banner {
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .banner-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .brand {
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Josefin Sans', sans-serif;
+            flex: 1;
+        }
+
+        .shipping-info {
+            background-color: #006400;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        .social-media a {
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .social-media img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .social-media img:hover {
+            opacity: 0.7;
+        }
+
+        .button-container {
+            display: inline-block;
+            margin: 10px 5px;
+        }
+
+        .wp-block-button__link {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .wp-block-button__link:hover {
+            background-color: #555;
+        }
+
+        .wp-block-heading {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .is-contact-phone-email {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc; /* Bulleted list style */
+            font-size: 18px; /* Font size */
+            color: #333; /* Text color */
+            margin-left: 20px; /* Indentation */
+        }
+
+        .wp-block-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Header Section -->
-<header>
-    <div class="container">
-        <div class="logo">
-            <img src="logo.png" alt="WildWetlands Logo">
-            <h1>WildWetlands Art Gallery</h1>
+<div class="top-banner">
+    <div class="banner-content">
+        <div class="brand">WildWetlands</div>
+        <div class="shipping-info">Worldwide Shipping</div>
+        <div class="social-media">
+            <a href="#" title="Facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="#" title="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </div>
-</header>
+</div>
 
-<!-- Main Content Section -->
-<main>
-    <div class="container">
-        <h2>Explore Our Artwork</h2>
-        <div class="art-grid">
-            <!-- Artwork Squares -->
-            <div class="artwork-square">
-                <!-- Square 1 -->
-                <!-- Link to Checkout Page -->
-                <a href="checkout-page-1.html">
-                    <img src="artwork1.jpg" alt="Artwork 1">
-                    <p>Artwork Title 1</p>
-                </a>
-            </div>
-            <!-- Repeat for 21 More Squares -->
-            <!-- Square 2 -->
-            <div class="artwork-square">
-                <a href="checkout-page-2.html">
-                    <img src="artwork2.jpg" alt="Artwork 2">
-                    <p>Artwork Title 2</p>
-                </a>
-            </div>
-            <!-- Repeat for Squares 3 to 22 -->
-        </div>
-    </div>
-</main>
+<h2 class="wp-block-heading alignwide has-text-align-center" style="font-size: 40px;font-weight: bold;font-family: 'Josefin Sans', sans-serif">Main Gallery</h2>
 
-<!-- Footer Section -->
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <h3>WildWetlands</h3>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/yourfacebookpage"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/yourinstagrampage"><img src="instagram-icon.png" alt="Instagram"></a>
-            </div>
-        </div>
-    </div>
-</footer>
+<!-- Example Image -->
+<figure class="wp-block-image size-full">
+    <img src="https://wildwetlands3.wordpress.com/wp-content/uploads/2024/06/cherry-tree-pond-20-2.jpeg" alt="" class="wp-image-259" style="object-fit:cover"/>
+</figure>
+
+<!-- Contact Section -->
+<h2 class="wp-block-heading has-text-align-left" style="font-family: 'Josefin Sans', sans-serif; font-size: 28px;">Contact us</h2>
+<p class="has-text-align-left is-contact-phone-email" style="font-family: 'Montserrat', sans-serif; font-size: 18px;">
+    Fascinated by our wild art? Let's chat! Send us a message below,<br> 
+    and our team will respond in a flash!<br> 
+    Whether you have questions, feedback, or simply want to talk about our creations, we're here to make your experience at WildWetlands truly immersive and memorable.
+</p>
+
+<!-- Buttons -->
+<div class="wp-block-button button-container">
+    <a class="wp-block-button__link wp-element-button" href="#">Home</a>
+</div>
+<div class="wp-block-button button-container">
+    <a class="wp-block-button__link wp-element-button" href="#">Main Gallery</a>
+</div>
+<div class="wp-block-button button-container">
+    <a class="wp-block-button__link wp-element-button" href="#">About</a>
+</div>
+
+<!-- List Example -->
+<ul>
+    <li>Premium canvases in glossy or matte finishes.</li>
+    <li>Expertly stretched over sturdy 1.5" x 1.5" wooden frames.</li>
+    <li>Vivid Color Radiance</li>
+    <li>Luxury Frame of your choice.</li>
+    <li>Ready to showcase!</li>
+</ul>
 
 </body>
 </html>
-
-
